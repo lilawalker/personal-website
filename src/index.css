@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body{
+  font-family: 'Permanent Marker';
+}
+
+.name {
+  font-size: 50px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0px;
+}
