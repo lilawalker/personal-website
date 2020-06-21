@@ -20,7 +20,7 @@ body{
 .nav-bar {
   border-color: black;
   border-style: solid;
-  border-width: px;
+  border-width: 2px;
   display: flex;
   justify-content: space-evenly;
   padding: 5px;
