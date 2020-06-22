@@ -23,19 +23,27 @@ class App extends React.Component {
     this.setState({ active: component})
   }
 
+  changeComponent(component) {
+    const components = {
+      profile: <Profile />,
+      techskills: <TechSkills />,
+      projects: <Projects />,
+      careerhistory: <CareerHistory />,
+      education: <Education />,
+      interests: <Interests />,
+      contact: <Contact />
+    };
+
+    return components[component]
+  }
+
   render() {
 
     return (
       <div>
         <Header />
         <Nav handleChange={this.handleChange} />
-        <Profile />
-        <TechSkills />
-        <Projects />
-        <CareerHistory />
-        <Education />
-        <Interests />
-        <Contact />
+        {this.changeComponent(this.state.active)}
       </div>
     );
   }

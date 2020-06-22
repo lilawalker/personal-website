@@ -23,7 +23,7 @@ class Nav extends React.Component {
         <a href="/#" component="careerhistory" onClick={this.handleClick}>Career History</a>
         <a href="/#" component="education" onClick={this.handleClick}>Education</a>
         <a href="/#" component="interests" onClick={this.handleClick}>Interests</a>
-        <a href="/#" component="contact" onClick={this.handleClick}>Contact</a>
+        <a href="/#" component="contact" onClick={this.handleClick}>Contact Me</a>
       </div>
     );
   }
