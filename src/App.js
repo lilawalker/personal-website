@@ -10,13 +10,25 @@ import Interests from './Interests';
 import Contact from './Contact';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      active: 'profile'
+    }
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(component) {
+    this.setState({ active: component})
+  }
 
   render() {
 
     return (
       <div>
         <Header />
-        <Nav />
+        <Nav handleChange={this.handleChange} />
         <Profile />
         <TechSkills />
         <Projects />
