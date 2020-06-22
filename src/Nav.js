@@ -1,27 +1,25 @@
 import React from 'react';
-import Profile from './Profile';
-import TechSkills from './TechSkills';
-import Projects from './Projects';
-import CareerHistory from './CareerHistory';
-import Education from './Education';
-import Interests from './Interests';
-import Contact from './Contact';
 
 class Nav extends React.Component {
+
+  handleClick(event) {
+    event.preventDefault();
+    console.log('The link was clicked');
+  }
 
   render() {
 
     return (
       <div className="nav-bar">
-        <Profile />
-        <TechSkills />
-        <Projects />
-        <CareerHistory />
-        <Education />
-        <Interests />
-        <Contact />
+        <a href="/#" onClick={this.handleClick}>Profile</a>
+        <a href="/#" onClick={this.handleClick}>Tech Skills</a>
+        <a href="/#" onClick={this.handleClick}>Projects</a>
+        <a href="/#" onClick={this.handleClick}>Career History</a>
+        <a href="/#" onClick={this.handleClick}>Education</a>
+        <a href="/#" onClick={this.handleClick}>Interests</a>
+        <a href="/#" onClick={this.handleClick}>Contact</a>
       </div>
-    )
+    );
   }
 }
 
