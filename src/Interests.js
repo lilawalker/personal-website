@@ -29,7 +29,7 @@ class Interests extends React.Component {
           Photographing neighbourhood cats on my daily-mandated walk
         </div>
 
-        <div className="images">
+        <div className="image-container">
           <img src={cat1} alt="cat1" className="interest-image" />
           <img src={cat2} alt="cat2" className="interest-image" />
           <img src={cat3} alt="cat3" className="interest-image" />
@@ -39,7 +39,7 @@ class Interests extends React.Component {
 
         <div className="interest-header">Cycling to cool places</div>
 
-        <div className="images">
+        <div className="image-container">
           <img src={cycle1} alt="cycle1" className="interest-image" />
           <img src={cycle7} alt="cycle7" className="interest-image" />
           <img src={cycle2} alt="cycle2" className="interest-image" />
@@ -49,7 +49,7 @@ class Interests extends React.Component {
 
         <div className="interest-header">Sewing beautiful works of art</div>
 
-        <div className="images">
+        <div className="image-container">
           <img src={sew5} alt="sew5" className="interest-image" />
           <img src={sew2} alt="sew2" className="interest-image" />
           <img src={sew4} alt="sew4" className="interest-image" />
@@ -59,7 +59,7 @@ class Interests extends React.Component {
 
         <div className="interest-header">Collecting eclectic tattoos</div>
 
-        <div className="images">
+        <div className="image-container">
           <img src={tat5} alt="tat5" className="interest-image" />
           <img src={tat1} alt="tat1" className="interest-image" />
           <img src={tat4} alt="tat4" className="interest-image" />

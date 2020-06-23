@@ -54,13 +54,13 @@ a:active {
   text-decoration: none;
 }
 
-.interest-header {
+.interest-header, .contact-header {
   padding-bottom: 20px;
   padding-top: 60px;
   text-align: center;
 }
 
-.images {
+.image-container {
   display: flex;
   justify-content: space-evenly;
   margin: auto;
@@ -71,4 +71,16 @@ a:active {
 .interest-image {
   border-radius: 50%;
   height: 150px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 20px;
+  width: 25%;
+}
+
+.icon {
+  height: 50px;
 }
