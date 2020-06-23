@@ -2,12 +2,13 @@
 
 body{
   font-family: 'Permanent Marker';
+  margin: 0 auto;
 }
 
 .name {
   font-size: 50px;
   margin-bottom: 0px;
-  margin-top: 20px;
+  margin-top: 0px;
   text-align: center;
 }
 
@@ -24,6 +25,13 @@ body{
   display: flex;
   justify-content: space-evenly;
   padding: 5px;
+}
+
+.main-header {
+  height: fit-content;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
 a:link {

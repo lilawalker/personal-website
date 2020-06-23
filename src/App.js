@@ -41,8 +41,10 @@ class App extends React.Component {
 
     return (
       <div>
-        <Header />
-        <Nav handleChange={this.handleChange} />
+        <div className="main-header"> 
+          <Header />
+          <Nav handleChange={this.handleChange} />
+        </div>
         {this.changeComponent(this.state.active)}
       </div>
     );
