@@ -45,3 +45,22 @@ a:active {
   color: rgb(211, 7, 109);
   text-decoration: none;
 }
+
+.interest-header {
+  padding-bottom: 20px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 10px;
+  width: 75%;
+}
+
+.interest-image {
+  border-radius: 50%;
+  height: 150px;
+}
