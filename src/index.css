@@ -100,3 +100,26 @@ a:active {
   margin-top: 70px;
   width: 400px;
 }
+
+.education-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 20px;
+  width: 70%;
+}
+
+.education-content {
+  font-family: 'Roboto';
+  margin-top: 70px;
+  width: 400px;
+}
+
+.edu-image {
+  height: 50px;
+}
+
+.edu-logo {
+  height: 15px;
+}
