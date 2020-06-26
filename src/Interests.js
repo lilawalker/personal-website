@@ -23,48 +23,62 @@ class Interests extends React.Component {
 
   render() {
 
+    const interests = [
+      {
+        header: "Photographing neighbourhood cats on my daily-mandated walk",
+        img1: cat1,
+        img2: cat2,
+        img3: cat3,
+        img4: cat4,
+        img5: cat5,
+      },
+      {
+        header: "Cycling to cool places",
+        img1: cycle1,
+        img2: cycle7,
+        img3: cycle2,
+        img4: cycle3,
+        img5: cycle5,
+      },
+      {
+        header: "Sewing beautiful works of art",
+        img1: sew5,
+        img2: sew2,
+        img3: sew4,
+        img4: sew1,
+        img5: sew3,
+      },
+      {
+        header: "Collecting eclectic tattoos",
+        img1: tat5,
+        img2: tat1,
+        img3: tat4,
+        img4: tat3,
+        img5: tat1,
+      },
+    ];
+
     return (
       <div>
-        <div className="interest-header">
-          Photographing neighbourhood cats on my daily-mandated walk
-        </div>
+        {
+          interests.map((interest, index) => {
+            return(
+              <div key={index}>
+                <div className="interest-header">
+                  {interest.header}
+                </div>
 
-        <div className="image-container">
-          <img src={cat1} alt="cat1" className="interest-image" />
-          <img src={cat2} alt="cat2" className="interest-image" />
-          <img src={cat3} alt="cat3" className="interest-image" />
-          <img src={cat4} alt="cat4" className="interest-image" />
-          <img src={cat5} alt="cat5" className="interest-image" />
-        </div>
-
-        <div className="interest-header">Cycling to cool places</div>
-
-        <div className="image-container">
-          <img src={cycle1} alt="cycle1" className="interest-image" />
-          <img src={cycle7} alt="cycle7" className="interest-image" />
-          <img src={cycle2} alt="cycle2" className="interest-image" />
-          <img src={cycle3} alt="cycle3" className="interest-image" />
-          <img src={cycle5} alt="cycle5" className="interest-image" />
-        </div>
-
-        <div className="interest-header">Sewing beautiful works of art</div>
-
-        <div className="image-container">
-          <img src={sew5} alt="sew5" className="interest-image" />
-          <img src={sew2} alt="sew2" className="interest-image" />
-          <img src={sew4} alt="sew4" className="interest-image" />
-          <img src={sew1} alt="sew1" className="interest-image" />
-          <img src={sew3} alt="sew3" className="interest-image" />
-        </div>
-
-        <div className="interest-header">Collecting eclectic tattoos</div>
-
-        <div className="image-container">
-          <img src={tat5} alt="tat5" className="interest-image" />
-          <img src={tat1} alt="tat1" className="interest-image" />
-          <img src={tat4} alt="tat4" className="interest-image" />
-          <img src={tat3} alt="tat3" className="interest-image" />
-        </div>
+                <div className="image-container">
+                  <img src={interest.img1} alt="img1" className="interest-image" />
+                  <img src={interest.img2} alt="img2" className="interest-image" />
+                  <img src={interest.img3} alt="img3" className="interest-image" />
+                  <img src={interest.img4} alt="img4" className="interest-image" />
+                  <img src={interest.img5} alt="img5" className="interest-image" />
+                </div>
+              </div>
+            )
+          })
+        }
       </div>
     );
   }
