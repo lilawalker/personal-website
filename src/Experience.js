@@ -1,9 +1,9 @@
 import React from 'react';
-import ACCALogo from './ACCALogo.png'
-import RyersonLogo from './RyersonLogo.jpg'
-import MakersLogo from './MakersLogo.png'
-import pin from './pin.svg'
-import calendar from './calendar.svg'
+import ACCALogo from './images/ACCALogo.png'
+import RyersonLogo from './images/RyersonLogo.jpg'
+import MakersLogo from './images/MakersLogo.png'
+import pin from './images/pin.svg'
+import calendar from './images/calendar.svg'
 
 class Experience extends React.Component {
 

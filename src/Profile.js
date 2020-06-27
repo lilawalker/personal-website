@@ -1,5 +1,5 @@
 import React from 'react';
-import Hi from './Hi.JPG'
+import Hi from './images/Hi.JPG'
 
 class Profile extends React.Component {
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import TwitterLogo from './TwitterLogo.svg';
-import LinkedInLogo from "./LinkedInLogo.svg";
-import GitHubLogo from "./GitHubLogo.svg";
-import GmailLogo from "./GmailLogo.svg";
+import TwitterLogo from './images/TwitterLogo.svg';
+import LinkedInLogo from './images/LinkedInLogo.svg';
+import GitHubLogo from './images/GitHubLogo.svg';
+import GmailLogo from './images/GmailLogo.svg';
 
 class Contact extends React.Component {
 
