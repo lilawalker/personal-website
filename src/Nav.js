@@ -15,15 +15,40 @@ class Nav extends React.Component {
 
   render() {
 
+    const navLinks = [
+      {
+        name: "profile",
+        title: "Profile",
+      },
+      {
+        name: "projects",
+        title: "Projects",
+      },
+      {
+        name: "experience",
+        title: "Experience",
+      },
+      {
+        name: "interests",
+        title: "Interests",
+      },
+      {
+        name: "contact",
+        title: "Contact",
+      },
+    ];
+
     return (
       <div className="nav-bar">
-        <a href="/#" component="profile" onClick={this.handleClick}>Profile</a>
-        <a href="/#" component="techskills" onClick={this.handleClick}>Tech Skills</a>
-        <a href="/#" component="projects" onClick={this.handleClick}>Projects</a>
-        <a href="/#" component="careerhistory" onClick={this.handleClick}>Career History</a>
-        <a href="/#" component="education" onClick={this.handleClick}>Education</a>
-        <a href="/#" component="interests" onClick={this.handleClick}>Interests</a>
-        <a href="/#" component="contact" onClick={this.handleClick}>Contact Me</a>
+        {
+          navLinks.map((component, index) => {
+            return(
+              <div key={index}>
+                <a href="/#" component={component.name} onClick={this.handleClick}>{component.title}</a>
+              </div>
+            )
+          })
+        }
       </div>
     );
   }

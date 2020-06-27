@@ -5,7 +5,7 @@ import MakersLogo from './MakersLogo.png'
 import pin from './pin.svg'
 import calendar from './calendar.svg'
 
-class Education extends React.Component {
+class Experience extends React.Component {
 
   render() {
 
@@ -61,4 +61,4 @@ class Education extends React.Component {
   }
 }
 
-export default Education;
+export default Experience;
