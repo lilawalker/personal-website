@@ -10,11 +10,11 @@ class ExperienceCard extends React.Component {
 
     return(
       <div className="w-full lg:flex mt-6 mb-6 border-gray-400 border rounded">
-        <div className="h-48 lg:h-auto lg:w-48 w-full flex items-center bg-gray-400">
+        <div className="h-48 lg:h-auto lg:w-1/3 w-full flex items-center bg-gray-400">
           <span className="block mx-auto">{institution.icon}</span>
         </div>
 
-        <div className="w-full p-4 leading-normal">
+        <div className="w-2/3 p-4 leading-normal">
 
           <div className="font-bold text-xl mb-2">
             {institution.title}
@@ -25,17 +25,7 @@ class ExperienceCard extends React.Component {
           </div>
 
           <div className="flex py-2">
-            <div className="flex lg:w-1/3 w-1/2">
-              <div>
-                <svg className="fill-current text-gray-600 w-4 h-4 mr-1" xmlns={pin.xmlns} viewBox={pin.viewBox}>
-                  {pin.path}
-                </svg>
-              </div>
-              <div className="text-gray-600 text-sm px-1">
-                {institution.location}
-              </div>
-            </div>
-            <div className="flex lg:w-1/3 w-1/2">
+            <div className="flex w-1/3">
               <div>
                 <svg className="fill-current text-gray-600 w-4 h-4 mr-1" xmlns={calendar.xmlns} viewBox={calendar.viewBox}>
                   {calendar.path}
@@ -43,6 +33,16 @@ class ExperienceCard extends React.Component {
               </div>
               <div className="text-gray-600 text-sm px-1">
                 {institution.dates}
+              </div>
+            </div>
+            <div className="flex w-1/3">
+              <div>
+                <svg className="fill-current text-gray-600 w-4 h-4 mr-1" xmlns={pin.xmlns} viewBox={pin.viewBox}>
+                  {pin.path}
+                </svg>
+              </div>
+              <div className="text-gray-600 text-sm px-1">
+                {institution.location}
               </div>
             </div>
           </div>
