@@ -23,20 +23,22 @@ class Contact extends React.Component {
       },
       {
         link: "mailto:lilawlker@gmail.com",
-        logo: GmailLogo
+        logo: GmailLogo,
       },
     ];
 
     return (
       <div>
-        <div className="contact-header">Find Me Below</div>
-        <div className="icon-container">
+        <div className="text-center pt-12 pb-6">
+          Find Me Below
+        </div>
+        <div className="flex justify-evenly m-auto p-4 w-1/3">
           {
             contact.map((details, index) => {
               return (
                 <div key={index}>
                   <a href={details.link}>
-                    <img src={details.logo} alt="Logo" className="icon" />
+                    <img src={details.logo} alt="Logo" className="h-16" />
                   </a>
                 </div>
               );

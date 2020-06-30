@@ -27,8 +27,8 @@ class Interests extends React.Component {
       {
         header: "Photographing neighbourhood cats on my daily-mandated walk",
         img1: cat1,
-        img2: cat2,
-        img3: cat3,
+        img2: cat3,
+        img3: cat2,
         img4: cat4,
         img5: cat5,
       },
@@ -64,16 +64,16 @@ class Interests extends React.Component {
           interests.map((interest, index) => {
             return(
               <div key={index}>
-                <div className="interest-header">
+                <div className="text-center pt-12 pb-6">
                   {interest.header}
                 </div>
 
-                <div className="image-container">
-                  <img src={interest.img1} alt="img1" className="interest-image" />
-                  <img src={interest.img2} alt="img2" className="interest-image" />
-                  <img src={interest.img3} alt="img3" className="interest-image" />
-                  <img src={interest.img4} alt="img4" className="interest-image" />
-                  <img src={interest.img5} alt="img5" className="interest-image" />
+                <div className="flex justify-evenly m-auto p-4 w-2/3">
+                  <img src={interest.img1} alt="img1" className="rounded-full h-40" />
+                  <img src={interest.img2} alt="img2" className="rounded-full h-40" />
+                  <img src={interest.img3} alt="img3" className="rounded-full h-40" />
+                  <img src={interest.img4} alt="img4" className="rounded-full h-40" />
+                  <img src={interest.img5} alt="img5" className="rounded-full h-40" />
                 </div>
               </div>
             )
