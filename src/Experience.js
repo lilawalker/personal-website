@@ -148,19 +148,19 @@ class Experience extends React.Component {
   }
 
     return (
-      <div className="mt-3 mb-3">
+      <div className="mt-9 mb-3 w-5/6 md:w-1/2 mx-auto">
         {
           experience.map((institution, index) => {
             return (
               <div
                 key={index}
-                className="max-w-sm w-full lg:max-w-full lg:flex py-3 px-3"
+                className="w-full lg:flex mt-6 mb-6 border-gray-400 border rounded"
               >
-                <div className="h-48 lg:h-auto lg:w-48 flex items-center align-middle bg-gray-400 rounded-t lg:rounded-t-none lg:rounded-l">
-                  <div className="ml-12">{institution.icon}</div>
+                <div className="h-48 lg:h-auto lg:w-48 w-full flex items-center bg-gray-400">
+                  <span className="block mx-auto">{institution.icon}</span>
                 </div>
 
-                <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                <div className="w-full p-4 leading-normal">
 
                   <div className="font-bold text-xl mb-2">
                     {institution.title}
@@ -171,7 +171,7 @@ class Experience extends React.Component {
                   </div>
 
                   <div className="flex py-2">
-                    <div className="flex w-1/2">
+                    <div className="flex lg:w-1/3 w-1/2">
                       <div>
                         <svg className="fill-current text-gray-600 w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                           {pin.path}
@@ -181,7 +181,7 @@ class Experience extends React.Component {
                         {institution.location}
                       </div>
                     </div>
-                    <div className="flex w-1/2">
+                    <div className="flex lg:w-1/3 w-1/2">
                       <div>
                         <svg className="fill-current text-gray-600 w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.867 477.867">
                           {calendar.path}
