@@ -1,5 +1,6 @@
 import React from 'react';
-import link from './Link'
+import link from './Link';
+import GitHubLogo from './GitHubLogo';
 
 class ProjectCard extends React.Component {
 
@@ -19,19 +20,22 @@ class ProjectCard extends React.Component {
             {project.title}
           </div>
 
-          <div className="inline-flex">
-            <svg className="fill-current text-gray-600 w-3 h-3 mr-1 mt-1" xmlns={link.xmlns} viewBox={link.viewBox}>
-              {link.path}
+          <div className="inline-flex pr-6">
+            <svg className="fill-current text-gray-600 w-3 h-3 mr-1 mt-1" xmlns={GitHubLogo.xmlns} viewBox={GitHubLogo.viewBox}>
+              {GitHubLogo.path}
             </svg>
-            <a href={project.githubLink} className="text-gray-600 text-sm">{project.githubLink}</a>
+            <a href={project.githubLink} className="text-gray-600 text-sm pl-1" target="blank">GitHub</a>
           </div>
 
-          <div className="inline-flex">
-            <svg className="fill-current text-gray-600 w-3 h-3 mr-1 mt-1" xmlns={link.xmlns} viewBox={link.viewBox}>
-              {link.path}
-            </svg>
-            <a href={project.demoLink} className="text-gray-600 text-sm">{project.demoLink}</a>
-          </div>
+          {
+            project.demoLink !== '' &&
+              <div className="inline-flex">
+                <svg className="fill-current text-gray-600 w-3 h-3 mr-1 mt-1" xmlns={link.xmlns} viewBox={link.viewBox}>
+                  {link.path}
+                </svg>
+              <a href={project.demoLink} className="text-gray-600 text-sm pl-1" target="blank">Demo</a>
+              </div>
+          }
 
           <p className="text-gray-700 text-sm py-2">
             {project.description}
