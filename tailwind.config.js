@@ -10,6 +10,8 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    textColor: ["hover", "active"],
+  },
   plugins: [],
 };
