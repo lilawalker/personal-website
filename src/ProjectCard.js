@@ -9,35 +9,35 @@ class ProjectCard extends React.Component {
     const project = this.props.project;
 
     return (
-      <div className="w-full lg:flex mt-6 mb-6 border-gray-400 border rounded">
-        <div className="h-48 lg:h-auto lg:w-1/3 w-full flex items-center bg-gray-400">
+      <div className="w-full lg:flex mt-6 mb-6 border-pink-200 border rounded">
+        <div className="h-48 lg:h-auto lg:w-1/3 w-full flex items-center bg-pink-200">
           <span className="block mx-auto">{project.icon}</span>
         </div>
 
         <div className="w-2/3 p-4 leading-normal">
 
-          <div className="font-bold text-xl mb-2">
+          <div className="font-bold text-2xl mb-2 font-logo text-pink-700">
             {project.title}
           </div>
 
-          <div className="inline-flex pr-6">
-            <svg className="fill-current text-gray-600 w-3 h-3 mr-1 mt-1" xmlns={GitHubLogo.xmlns} viewBox={GitHubLogo.viewBox}>
+          <div className="inline-flex pr-6 text-pink-500">
+            <svg className="fill-current w-3 h-3 mr-1 mt-1" xmlns={GitHubLogo.xmlns} viewBox={GitHubLogo.viewBox}>
               {GitHubLogo.path}
             </svg>
-            <a href={project.githubLink} className="text-gray-600 text-sm pl-1" target="blank">GitHub</a>
+            <a href={project.githubLink} className="text-sm pl-1" target="blank">GitHub</a>
           </div>
 
           {
             project.demoLink !== '' &&
-              <div className="inline-flex">
-                <svg className="fill-current text-gray-600 w-3 h-3 mr-1 mt-1" xmlns={link.xmlns} viewBox={link.viewBox}>
+              <div className="inline-flex text-pink-500">
+                <svg className="fill-current w-3 h-3 mr-1 mt-1" xmlns={link.xmlns} viewBox={link.viewBox}>
                   {link.path}
                 </svg>
-              <a href={project.demoLink} className="text-gray-600 text-sm pl-1" target="blank">Demo</a>
+              <a href={project.demoLink} className="text-sm pl-1" target="blank">Demo</a>
               </div>
           }
 
-          <p className="text-gray-700 text-sm py-2">
+          <p className="text-gray-700 text-md py-2">
             {project.description}
           </p>
 
@@ -45,7 +45,7 @@ class ProjectCard extends React.Component {
             project.techStack.map((tech, index) =>{
               return(
                 <div key={index} className="inline-flex py-1">
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">{tech}</span>
+                  <span className="inline-block bg-pink-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">{tech}</span>
                 </div>
               )
             })

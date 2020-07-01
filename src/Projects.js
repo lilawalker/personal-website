@@ -23,8 +23,8 @@ const projects = [
   {
     title: 'Personal Website',
     githubLink: 'https://github.com/lilawalker/personal-website',
-    demoLink: 'https://lilawalker.dev',
-    description: "A site all about me! You're looking at it now.",
+    demoLink: '',
+    description: "You're looking at it now!",
     techStack: [
       'JavaScript',
       'React',
