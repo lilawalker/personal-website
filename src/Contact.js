@@ -29,7 +29,7 @@ class Contact extends React.Component {
 
     return (
       <div>
-        <div className="text-center pt-12 pb-6">
+        <div className="text-center pt-12 pb-6 font-logo text-xl text-pink-700">
           Find Me Below
         </div>
         <div className="flex justify-evenly m-auto p-4 w-1/3">

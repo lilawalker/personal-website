@@ -59,21 +59,21 @@ class Interests extends React.Component {
     ];
 
     return (
-      <div>
+      <div className="w-1/2 mx-auto">
         {
           interests.map((interest, index) => {
             return(
-              <div key={index}>
-                <div className="text-center pt-12 pb-6">
+              <div key={index} className="flex flex-col my-6 border-pink-200 border rounded">
+                <div className="text-center pt-6 pb-6 font-logo text-xl text-pink-700">
                   {interest.header}
                 </div>
 
-                <div className="flex justify-evenly m-auto p-4 w-2/3">
-                  <img src={interest.img1} alt="img1" className="rounded-full h-40" />
-                  <img src={interest.img2} alt="img2" className="rounded-full h-40" />
-                  <img src={interest.img3} alt="img3" className="rounded-full h-40" />
-                  <img src={interest.img4} alt="img4" className="rounded-full h-40" />
-                  <img src={interest.img5} alt="img5" className="rounded-full h-40" />
+                <div className="flex justify-evenly pb-6">
+                  <img src={interest.img1} alt="img1" className="rounded-full h-24" />
+                  <img src={interest.img2} alt="img2" className="rounded-full h-24" />
+                  <img src={interest.img3} alt="img3" className="rounded-full h-24" />
+                  <img src={interest.img4} alt="img4" className="rounded-full h-24" />
+                  <img src={interest.img5} alt="img5" className="rounded-full h-24" />
                 </div>
               </div>
             )
