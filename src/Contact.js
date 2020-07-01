@@ -37,7 +37,7 @@ class Contact extends React.Component {
             contact.map((details, index) => {
               return (
                 <div key={index}>
-                  <a href={details.link}>
+                  <a href={details.link} target="blank">
                     <img src={details.logo} alt="Logo" className="h-16" />
                   </a>
                 </div>
