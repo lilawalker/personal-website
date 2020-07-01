@@ -1,11 +1,12 @@
 import React from 'react';
-import Header from './Header'
 import Nav from './Nav'
 import Profile from './Profile';
 import Projects from './Projects';
 import Experience from './Experience';
 import Interests from './Interests';
 import Contact from './Contact';
+import 'fontsource-permanent-marker';
+import 'typeface-roboto';
 
 class App extends React.Component {
   constructor(props) {
@@ -36,9 +37,8 @@ class App extends React.Component {
   render() {
 
     return (
-      <div>
-        <div className="main-header">
-          <Header />
+      <div className="font-sans">
+        <div className="sticky top-0 bg-black">
           <Nav handleChange={this.handleChange} />
         </div>
         {this.changeComponent(this.state.active)}
