@@ -4752,6 +4752,11 @@ follow-redirects@^1.0.0:
   dependencies:
     debug "^3.0.0"
 
+fontsource-permanent-marker@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/fontsource-permanent-marker/-/fontsource-permanent-marker-2.1.3.tgz#0c8a3ef49787a924ba5c52c86e3af3b339be9e9b"
+  integrity sha512-xOAGPT2M2ryQO9WWbw5I/mTURqugckdTY3QKjaTNtkTsRsX34HR0bO1jXOwbUdtwB4D3xU22r/kSQkLtnFrmEA==
+
 for-in@^0.1.3:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-0.1.8.tgz#d8773908e31256109952b1fdb9b3fa867d2775e1"
@@ -10535,6 +10540,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typeface-roboto@^0.0.75:
+  version "0.0.75"
+  resolved "https://registry.yarnpkg.com/typeface-roboto/-/typeface-roboto-0.0.75.tgz#98d5ba35ec234bbc7172374c8297277099cc712b"
+  integrity sha512-VrR/IiH00Z1tFP4vDGfwZ1esNqTiDMchBEXYY9kilT6wRGgFoCAlgkEUMHb1E3mB0FsfZhv756IF0+R+SFPfdg==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
