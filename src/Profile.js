@@ -6,25 +6,29 @@ class Profile extends React.Component {
   render() {
 
     return (
-      <div className="profile-container">
-        <div className="profile-content">
-          <p>Hi, I'm Lila! I'm a Junior Software Engineer based in London.</p>
-          <p>
-            I'm a career changer with a background in finance and several years experience as a
-            team leader and mentor. I’ve always been inquisitive and artistic;
-            whether it be crocheting, sewing, or dismantling something just to
-            see how it works. Unfortunately finance wasn't bringing the personal and career
-            satisfaction I was looking for, so I started learning how to code!
+      <div className="lg:w-2/3 flex justify-between mx-auto px-10 mt-16">
+        <div className="w-full lg:w-7/12 pr-12 my-auto">
+          <h2 className="font-logo text-3xl text-pink-700 mb-4">
+            Hi, I'm Lila, a Junior Software Engineer based in London.
+          </h2>
+          <p className="mb-4 text-xl text-gray-700">
+            I write Ruby and Javascript, but I'm eager to learn new
+            technologies.
           </p>
-          <p>
-            Learning to code allowed me to combine my existing skills of problem
-            solving, leadership and analysis with my creative side. This
-            inspired me to become a fully fledged developer, and led me to complete an
-            intensive coding bootcamp at Makers Academy.
+          <p className="mb-4 text-xl text-gray-700">
+            I've recently graduated from Makers Academy's intensive coding
+            bootcamp and I'm on the lookout for a job.
+            <a
+              href="mailto:lilawlkr@gmail.com"
+              className="font-logo text-pink-500 hover:text-pink-400 active:text-pink-300"
+            >
+              {" "}
+              Hire me!
+            </a>
           </p>
         </div>
 
-        <div className="profile-content">
+        <div className="w-full lg:w-5/12 pl-12">
           <img src={Hi} alt="Hi" />
         </div>
       </div>
