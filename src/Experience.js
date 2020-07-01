@@ -30,10 +30,10 @@ const experience = [
     dates: '10/2013 - 02/2020',
     icon: work,
     description: <div>
-                  <P><b>Leadership & Team Building</b> ● Successfully led a team through team meetings and one-on-ones, working with team members to manage workloads and assisting them in meeting their deliverables.</P>
-                  <P><b>Mentorship</b> ● Skilled and personable mentor, demonstrated by several of my team members being promoted to senior roles. </P>
-                  <P><b>Problem Solving</b> ● Used an analytical approach to break down client inquiries and identify the root cause. As a result, I worked with various teams within the business to resolve issues.</P>
-                  <P><b>Reporting & Analysis</b> ● Took initiative to simplify processes by designing and testing new reports. This resulted in a 40% reduction in the time spent by the team on manual manipulation of reports.</P>
+                  <P><b>Leadership & Team Building:</b> Successfully led a team through team meetings and one-on-ones, working with team members to manage workloads and assisting them in meeting their deliverables.</P>
+                  <P><b>Mentorship:</b> Skilled and personable mentor, demonstrated by several of my team members being promoted to senior roles. </P>
+                  <P><b>Problem Solving:</b> Used an analytical approach to break down client inquiries and identify the root cause. As a result, I worked with various teams within the business to resolve issues.</P>
+                  <P><b>Reporting & Analysis:</b> Took initiative to simplify processes by designing and testing new reports. This resulted in a 40% reduction in the time spent by the team on manual manipulation of reports.</P>
                 </div>
   },
   {
