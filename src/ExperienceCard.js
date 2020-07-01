@@ -15,7 +15,7 @@ class ExperienceCard extends React.Component {
         </div>
 
         <div className="w-2/3 p-4 leading-normal">
-          <div className="font-bold text-xl mb-2 font-logo text-pink-700">
+          <div className="font-bold text-2xl mb-2 font-logo text-pink-700">
             {institution.title}
           </div>
 
