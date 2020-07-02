@@ -15,6 +15,7 @@ import sew3 from './images/sew3.jpg';
 import sew4 from './images/sew4.jpg';
 import sew5 from './images/sew5.jpg';
 import tat1 from './images/tat1.jpg';
+import tat2 from './images/tat2.jpg';
 import tat3 from './images/tat3.jpg';
 import tat4 from './images/tat4.jpg';
 import tat5 from './images/tat5.jpg';
@@ -53,8 +54,8 @@ class Interests extends React.Component {
         img1: tat5,
         img2: tat1,
         img3: tat4,
-        img4: tat3,
-        img5: tat1,
+        img4: tat2,
+        img5: tat3,
       },
     ];
 

@@ -9,9 +9,11 @@ class ProjectCard extends React.Component {
     const project = this.props.project;
 
     return (
-      <div className="w-full lg:flex mt-6 mb-6 border-pink-200 border rounded">
+      <div className="w-full lg:flex my-12 border-pink-200 border rounded bg-gray-100">
         <div className="h-48 lg:h-auto lg:w-1/3 w-full flex items-center bg-pink-200">
-          <span className="block mx-auto">{project.icon}</span>
+          {project.image !== "" && (
+            <img src={project.image} alt="img" className="block mx-auto" />
+          )}
         </div>
 
         <div className="w-2/3 p-4 leading-normal">
@@ -57,15 +59,17 @@ class ProjectCard extends React.Component {
 
           <p className="text-gray-700 text-md py-2">{project.description}</p>
 
-          {project.techStack.map((tech, index) => {
-            return (
-              <div key={index} className="inline-flex py-1">
-                <span className="inline-block bg-pink-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2">
-                  {tech}
-                </span>
-              </div>
-            );
-          })}
+          <ul className="mt-4">
+            {project.techStack.map((tech, index) => {
+              return (
+                <li key={index} className="py-1 inline">
+                  <span className="inline-block bg-pink-200 rounded-full px-3 py-1 mb-2 text-xs font-semibold text-gray-700 mr-2">
+                    {tech}
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     );
