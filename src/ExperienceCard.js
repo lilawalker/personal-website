@@ -9,7 +9,7 @@ class ExperienceCard extends React.Component {
     const institution = this.props.institution;
 
     return (
-      <div className="w-full lg:flex mt-6 mb-6 border-pink-200 border rounded">
+      <div className="w-full lg:flex my-12 border-pink-200 border rounded bg-gray-100">
         <div className="h-48 lg:h-auto lg:w-1/3 w-full flex items-center bg-pink-200">
           <span className="block mx-auto">{institution.icon}</span>
         </div>
@@ -32,9 +32,7 @@ class ExperienceCard extends React.Component {
                   {calendar.path}
                 </svg>
               </div>
-              <div className="text-sm px-1">
-                {institution.dates}
-              </div>
+              <div className="text-sm px-1">{institution.dates}</div>
             </div>
             <div className="flex w-1/3">
               <div>
@@ -46,9 +44,7 @@ class ExperienceCard extends React.Component {
                   {pin.path}
                 </svg>
               </div>
-              <div className="text-sm px-1">
-                {institution.location}
-              </div>
+              <div className="text-sm px-1">{institution.location}</div>
             </div>
           </div>
 

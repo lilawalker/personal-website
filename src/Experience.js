@@ -5,9 +5,9 @@ const P = ({ children }) => {
   return <p className="py-1">{children}</p>
 }
 
-const laptop = <span role="img" aria-label="laptop" style={{ fontSize: "80px" }}>&#128187;</span>
-const work = <span role="img" aria-label="work" style={{ fontSize: "80px" }}>&#127970;</span>
-const uni = <span role="img" aria-label="uni" style={{ fontSize: "80px" }}>&#127891;</span>
+const laptop = <span role="img" aria-label="laptop" style={{ fontSize: "160px" }}>&#128187;</span>
+const work = <span role="img" aria-label="work" style={{ fontSize: "160px" }}>&#127970;</span>
+const uni = <span role="img" aria-label="uni" style={{ fontSize: "160px" }}>&#127891;</span>
 
 const experience = [
   {
