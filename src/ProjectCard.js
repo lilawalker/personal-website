@@ -10,13 +10,13 @@ class ProjectCard extends React.Component {
 
     return (
       <div className="w-full lg:flex my-12 border-pink-200 border rounded bg-gray-100">
-        <div className="h-48 lg:h-auto lg:w-1/3 w-full flex items-center bg-pink-200">
+        <div className="min-h-48 lg:h-auto lg:w-1/3 w-full flex items-center bg-pink-200">
           {project.image !== "" && (
             <img src={project.image} alt="img" className="block mx-auto" />
           )}
         </div>
 
-        <div className="w-2/3 p-4 leading-normal">
+        <div className="w-full lg:w-2/3 p-4 leading-normal">
           <div className="font-bold text-2xl mb-2 font-logo text-pink-700">
             {project.title}
           </div>
