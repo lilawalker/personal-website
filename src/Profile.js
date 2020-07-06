@@ -6,9 +6,13 @@ class Profile extends React.Component {
   render() {
 
     return (
-      <div className="lg:w-2/3 flex justify-between mx-auto px-10 mt-16">
-        <div className="w-full lg:w-7/12 pr-12 my-auto">
-          <h2 className="font-logo text-3xl text-pink-700 mb-4">
+      <div className="lg:w-2/3 md:flex flex-row-reverse justify-between mx-auto px-10 mt-16">
+        <div className="w-full md:w-5/12 lg:pl-12 mb-6">
+          <img src={Hi} alt="Hi" className="h-48 w-48 mx-auto md:h-auto md:w-auto" />
+        </div>
+
+        <div className="w-full md:w-7/12 pr-12 my-auto">
+          <h2 className="font-logo text-xl lg:text-3xl text-pink-700 mb-4">
             Hi, I'm Lila, a Junior Software Engineer based in London.
           </h2>
           <p className="mb-4 text-xl text-gray-700">
@@ -26,10 +30,6 @@ class Profile extends React.Component {
               Hire me!
             </a>
           </p>
-        </div>
-
-        <div className="w-full lg:w-5/12 pl-12">
-          <img src={Hi} alt="Hi" />
         </div>
       </div>
     );
