@@ -38,9 +38,7 @@ class App extends React.Component {
 
     return (
       <div className="font-sans">
-        <div className="sticky top-0 bg-black">
-          <Nav handleChange={this.handleChange} />
-        </div>
+        <Nav handleChange={this.handleChange} />
         {this.changeComponent(this.state.active)}
       </div>
     );

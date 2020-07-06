@@ -39,29 +39,31 @@ class Nav extends React.Component {
     ];
 
     return (
-      <nav className="flex justify-between text-pink-700">
-        <h1 className="text-4xl my-1 font-logo pl-10">
-          <a href="/" className="hover:text-pink-400 active:text-pink-300">
-            Lila Walker
-          </a>
-        </h1>
-        <ul className="mt-6 pr-10 font-logo">
-          {navLinks.map((component, index) => {
-            return (
-              <li key={index} className="inline ml-20">
-                <a
-                  href="/#"
-                  className="hover:text-pink-400 active:text-pink-300"
-                  component={component.name}
-                  onClick={this.handleClick}
-                >
-                  {component.title}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
+      <div className="sticky top-0 bg-black w-full pb-1 lg:pb-0">
+        <nav className="lg:flex justify-between text-pink-700">
+          <h1 className="text-4xl lg:my-1 font-logo lg:pl-10 text-center">
+            <a href="/" className="hover:text-pink-400 active:text-pink-300">
+              Lila Walker
+            </a>
+          </h1>
+          <ul className="lg:mt-6 lg:pr-10 text-center font-logo">
+            {navLinks.map((component, index) => {
+              return (
+                <li key={index} className="inline-block mr-4 lg:mr-0 lg:ml-20">
+                  <a
+                    href="/#"
+                    className="hover:text-pink-400 active:text-pink-300"
+                    component={component.name}
+                    onClick={this.handleClick}
+                  >
+                    {component.title}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </div>
     );
   }
 }
