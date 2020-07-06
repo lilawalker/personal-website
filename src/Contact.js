@@ -33,12 +33,12 @@ class Contact extends React.Component {
           Find Me Below
         </div>
 
-        <ul className="flex justify-evenly m-auto p-4 w-1/3">
+        <ul className="flex justify-evenly m-auto p-4 lg:w-1/2">
           {contact.map((details, index) => {
             return (
               <li key={index}>
                 <a href={details.link} target="blank">
-                  <img src={details.logo} alt="Logo" className="h-16" />
+                  <img src={details.logo} alt="Logo" className="h-16 w-16" />
                 </a>
               </li>
             );
