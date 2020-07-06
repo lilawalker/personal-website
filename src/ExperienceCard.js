@@ -1,6 +1,6 @@
 import React from 'react';
-import calendar from './Calendar'
-import pin from './Pin'
+import calendar from './logos/Calendar'
+import pin from './logos/Pin'
 
 class ExperienceCard extends React.Component {
 

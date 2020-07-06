@@ -1,6 +1,6 @@
 import React from 'react';
-import link from './Link';
-import GitHubLogo from './GitHubLogo';
+import link from './logos/Link';
+import GitHubLogo from './logos/GitHubLogo';
 
 class ProjectCard extends React.Component {
 
