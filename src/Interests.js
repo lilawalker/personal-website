@@ -20,6 +20,16 @@ import tat3 from './images/tat3.jpg';
 import tat4 from './images/tat4.jpg';
 import tat5 from './images/tat5.jpg';
 
+const Img = ({ name }) => {
+  return(
+    <img
+      src={name}
+      alt={name}
+      className="inline-block rounded-full h-32 w-32"
+    />
+  )
+}
+
 class Interests extends React.Component {
 
   render() {
@@ -27,77 +37,63 @@ class Interests extends React.Component {
     const interests = [
       {
         header: "Photographing neighbourhood cats on my daily-mandated walk",
-        img1: cat1,
-        img2: cat3,
-        img3: cat2,
-        img4: cat4,
-        img5: cat5,
+        images: [
+          cat1,
+          cat3,
+          cat2,
+          cat4,
+          cat5,
+        ]
       },
       {
         header: "Cycling to cool places",
-        img1: cycle1,
-        img2: cycle7,
-        img3: cycle2,
-        img4: cycle3,
-        img5: cycle5,
+        images: [
+          cycle1,
+          cycle7,
+          cycle2,
+          cycle3,
+          cycle5,
+        ]
       },
       {
         header: "Sewing beautiful works of art",
-        img1: sew5,
-        img2: sew2,
-        img3: sew4,
-        img4: sew1,
-        img5: sew3,
+        images: [
+          sew5,
+          sew2,
+          sew4,
+          sew1,
+          sew3,
+        ]
       },
       {
         header: "Collecting eclectic tattoos",
-        img1: tat5,
-        img2: tat1,
-        img3: tat4,
-        img4: tat2,
-        img5: tat3,
+        images: [
+          tat5,
+          tat1,
+          tat4,
+          tat2,
+          tat3,
+        ]
       },
     ];
 
     return (
-      <div className="w-1/2 mx-auto">
+      <div className="w-full lg:w-1/2 mx-auto px-4">
         {
           interests.map((interest, index) => {
             return (
               <div
                 key={index}
-                className="flex flex-col my-12 border-pink-200 border rounded bg-gray-100"
+                className="flex flex-col my-12 border-pink-200 border rounded bg-gray-100 px-2"
               >
                 <div className="text-center pt-6 pb-6 font-logo text-xl text-pink-700">
                   {interest.header}
                 </div>
 
-                <div className="flex justify-evenly pb-6">
-                  <img
-                    src={interest.img1}
-                    alt="img1"
-                    className="rounded-full h-32"
-                  />
-                  <img
-                    src={interest.img2}
-                    alt="img2"
-                    className="rounded-full h-32"
-                  />
-                  <img
-                    src={interest.img3}
-                    alt="img3"
-                    className="rounded-full h-32"
-                  />
-                  <img
-                    src={interest.img4}
-                    alt="img4"
-                    className="rounded-full h-32"
-                  />
-                  <img
-                    src={interest.img5}
-                    alt="img5"
-                    className="rounded-full h-32"
-                  />
+                <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-2 pb-6 mx-auto">
+                {
+                  interest.images.map((img, index) => <Img name={img} key={index}/>)
+                }
                 </div>
               </div>
             );
