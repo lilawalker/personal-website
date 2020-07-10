@@ -3,6 +3,8 @@ Lila Walker - Portfolio Website
 
 Who is Lila? What is she all about? Find out at https://lilawalker.dev!
 
+![Screenshot](public/Screenshot.png)
+
 Built with **React** and **Tailwind CSS**.
 
 ---
@@ -52,4 +54,4 @@ The app is deployed via Netlify. [Link to app](https://lilawalker.dev)
 
 **React Component Structure**
 
-![ComponentStructure](/public/MySiteComponentStructure.png)
+![ComponentStructure](public/MySiteComponentStructure.png)
