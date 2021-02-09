@@ -1,5 +1,5 @@
-import React from 'react';
-import contact from "./data/contactData"
+import React from "react";
+import contact from "./data/contactData";
 
 const Contact = () => {
   return (
@@ -20,7 +20,7 @@ const Contact = () => {
         })}
       </ul>
 
-      <div className="text-center mt-12">
+      {/* <div className="text-center mt-12">
         <a
           href="/LilaWalkerCV.pdf"
           download
@@ -28,9 +28,9 @@ const Contact = () => {
         >
           Download CV
         </a>
-      </div>
+      </div> */}
     </div>
   );
-}
+};
 
 export default Contact;
