@@ -1,12 +1,71 @@
-import Volunteer from '../images/VolunteerMatchingScreenshot.png'
-import MySite from '../images/MySiteScreenshot.png'
-import MixTape from '../images/MixTapeScreenshot.png'
-import Bank from '../images/BankScreenshot.png'
-import Acebook from '../images/AcebookScreenshot.png'
+import Volunteer from "../images/VolunteerMatchingScreenshot.png";
+import MySite from "../images/MySiteScreenshot.png";
+import MixTape from "../images/MixTapeScreenshot.png";
+import Bank from "../images/BankScreenshot.png";
+import Acebook from "../images/AcebookScreenshot.png";
 import Chitter from "../images/ChitterScreenshot.png";
 import Instagram from "../images/InstagramScreenshot.png";
+import Kittymapper from "../images/KittymapperScreenshot.png";
+import KittymapperAPI from "../images/KittymapperAPIScreenshot.png";
+import GoldenShoe from "../images/GoldenShoeScreenshot.png";
 
 const projectData = [
+  {
+    title: "kittymapper",
+    githubLink: "https://github.com/lilawalker/kittymapper",
+    demoLink: "https://kittymapper.netlify.app/",
+    description:
+      "During lockdown, I found myself photographing neighbourhood cats on my daily mandated walk. I wanted a way to share that joy with other people and to be able to locate on a map where and when the cats were seen. And thus, kittymapper was born. Now you can upload and automatically plot cats on Google Maps!",
+    techStack: [
+      "JavaScript",
+      "React",
+      "JWT Auth",
+      "Google Maps API",
+      "CSS",
+      "Responsive Design",
+      "Netlify",
+    ],
+    image: Kittymapper,
+  },
+  {
+    title: "kittymapper API",
+    githubLink: "https://github.com/lilawalker/kittymapper-api",
+    demoLink: "",
+    description:
+      "An API developed in Rails to support the kittymapper app. JWT's have been used to ensure secure authentication. Using an EXIF tool, images uploaded to the server are analysed for GPS coordinates so that the image can be automatically plotted on the map. AWS Rekognition software is used to detect the contents of the photo, ensuring only photos of cats can be uploaded.",
+    techStack: [
+      "Ruby",
+      "Rails API",
+      "RSpec",
+      "PostgreSQL",
+      "JWT Auth",
+      "AWS S3",
+      "AWS Rekognition",
+      "ImageMagick",
+      "EXIF Tool",
+      "RESTful API",
+      "Heroku",
+    ],
+    image: KittymapperAPI,
+  },
+  {
+    title: "Golden Shoe",
+    githubLink: "https://github.com/lilawalker/AND-Digital-Golden-Shoe",
+    demoLink: "https://golden-shoe-shop.herokuapp.com/",
+    description:
+      "An ecommerce shoe shop. Built for mobile-first responsive design. Features include a stock checking system, filters for colour, style and size, user account, shopping basket, checkout and order history.",
+    techStack: [
+      "Ruby",
+      "Rails",
+      "RSpec",
+      "Capybara",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Responsive Design",
+      "Heroku",
+    ],
+    image: GoldenShoe,
+  },
   {
     title: "Volunteer Matching",
     githubLink: "https://github.com/Age-UK-Voluteer-Matching/Match-App",
@@ -40,7 +99,8 @@ const projectData = [
     title: "MixTape",
     githubLink: "https://github.com/lilawalker/mix-tape",
     demoLink: "https://mix-tape-makers.herokuapp.com/signin",
-    description: "A collaborative playlist generator using Spotify's API.",
+    description:
+      "A collaborative playlist generator using Spotify's API. Built during my final group project while at Makers Academy.",
     techStack: [
       "Ruby",
       "Rails",
